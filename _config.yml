@@ -17,7 +17,7 @@ header_pages:
   - blog.md
   - about_me.md
 
-
+permalink: /:title
 paginate: 3
 paginate_path: "/blog/page:num/"
 
