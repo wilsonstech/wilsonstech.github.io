@@ -1,0 +1,39 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="content">
+
+  
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li class="article-card">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>{{ post.title | escape }}</h2>
+        <div class="post-content">
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="pagination">
+    {% if paginator.total_pages > 0 %}
+      {% if paginator.previous_page %}
+        <a class="pagination-item" href="{{ paginator.previous_page_path | relative_url }}" rel="prev">← Previous</a>
+      {% else %}
+        <span class="pagination-item disabled">← Previous</span>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a class="pagination-item" href="{{ paginator.next_page_path | relative_url }}" rel="next">Next →</a>
+      {% else %}
+        <span class="pagination-item disabled">Next →</span>
+      {% endif %}
+    {% endif %}
+  </div>
+
+</div>

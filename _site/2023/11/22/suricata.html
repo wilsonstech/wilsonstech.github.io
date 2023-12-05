@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6T387BP097"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6T387BP097');
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <title>
+    Suricata - Matthews-Project-Vault
+  </title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="/assets%5Cfavi.svg">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script type="text/javascript" src="/assets/js/copy.js"></script>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Suricata | Matthews-Project-Vault</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Suricata" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Suricata is an open-source Network IDS/IPS (Intrusion Detection and Prevention System) that can be used on Windows for inspecting and protecting network traffic. In this article, we’ll explore the basics of Suricata on a Windows environment, including installation and basic usage." />
+<meta property="og:description" content="Suricata is an open-source Network IDS/IPS (Intrusion Detection and Prevention System) that can be used on Windows for inspecting and protecting network traffic. In this article, we’ll explore the basics of Suricata on a Windows environment, including installation and basic usage." />
+<link rel="canonical" href="http://localhost:4000/2023/11/22/suricata.html" />
+<meta property="og:url" content="http://localhost:4000/2023/11/22/suricata.html" />
+<meta property="og:site_name" content="Matthews-Project-Vault" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-22T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Suricata" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-22T00:00:00-04:00","datePublished":"2023-11-22T00:00:00-04:00","description":"Suricata is an open-source Network IDS/IPS (Intrusion Detection and Prevention System) that can be used on Windows for inspecting and protecting network traffic. In this article, we’ll explore the basics of Suricata on a Windows environment, including installation and basic usage.","headline":"Suricata","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/11/22/suricata.html"},"url":"http://localhost:4000/2023/11/22/suricata.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+</head>
+
+
+  <body class="large">
+
+    <header>
+  <div class="menu">
+    <ul>
+      <li class="page_title">Suricata</li>
+<li><a href="/">/home</a></li>
+<li><a href="/blog/">/Projects</a></li>
+<li><a href="/about_me.html">/About-me</a></li>
+</ul>
+  </div>
+</header>
+
+
+    
+
+<h1></h1>
+
+<p>Suricata is an open-source Network IDS/IPS (Intrusion Detection and Prevention System) that can be used on Windows for inspecting and protecting network traffic. In this article, we’ll explore the basics of Suricata on a Windows environment, including installation and basic usage.</p>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+  <li>Download the latest Suricata Windows installer from the official Suricata website: <a href="https://suricata.io/" target="_blank">Suricata Downloads</a>
+</li>
+</ol>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>After installation, you may need to adjust the configuration settings. The configuration file for Suricata on Windows is typically located in the installation directory, e.g., <code class="language-plaintext highlighter-rouge">C:\Program Files\Suricata\suricata.yaml</code>. Open this file using a text editor.</p>
+
+<p>Suricata uses the Yaml format for configuration. The Suricata.yaml file included in the source code, is the example configuration of Suricata. This document will explain each option.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Example suricata.yaml configuration for Windows</span>
+
+vars:
+  # more specific is better for alert accuracy and performance
+  address-groups:
+    HOME_NET: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
+    #HOME_NET: "[192.168.0.0/16]"
+    #HOME_NET: "[10.0.0.0/8]"
+    #HOME_NET: "[172.16.0.0/12]"
+    #HOME_NET: "any"<span class="sb">
+
+    EXTERNAL_NET: "!$HOME_NET"
+    #EXTERNAL_NET: "any"
+</span></code></pre></div></div>
+
+<p>When you set HOME_NET, for example, you are telling Suricata which IP addresses are considered internal to your network. Similarly, EXTERNAL_NET is the set of addresses outside your internal network. These definitions are typically used within the rules section of Suricata to specify which traffic to match or ignore.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> port-groups:
+  HTTP_PORTS: "80"
+  SHELLCODE_PORTS: "!80"
+  ORACLE_PORTS: 1521
+  SSH_PORTS: 22
+  DNP3_PORTS: 20000
+  MODBUS_PORTS: 502
+  FILE_DATA_PORTS: "[$HTTP_PORTS,110,143]"
+  FTP_PORTS: 21
+  GENEVE_PORTS: 6081
+  VXLAN_PORTS: 4789
+  TEREDO_PORTS: 3544
+</code></pre></div></div>
+<p>Port groups are used to organize and reference sets of ports.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>default-rule-path: rules
+rule-files:
+<span class="p">  -</span> suricata.rules
+</code></pre></div></div>
+<p>Inside the rules folder, create or place your custom rule file.</p>
+
+<h2 id="run-suricata">Run Suricata:</h2>
+
+<p>Open a command prompt with administrator privileges. Navigate to the Suricata installation directory. Run Suricata using the command:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>suricata.exe -c suricata.yaml -i [your_network_interface]
+</code></pre></div></div>
+
+<p>Replace [your_network_interface] with the actual network interface you want Suricata to monitor.</p>
+
+<p>Remember to refer to the Suricata documentation or any specific documentation provided with the Windows distribution for detailed instructions and troubleshooting tips.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+  
+  Matthews-Project-Vault/
+  <br><br>
+  Built with <img class="emoji" title=":heart:" alt=":heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> using Jekyll hosted on GitHub Pages.
+   <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20"> <a href="https://github.com/Matthew-a-smith">@Matthew-a-smith</a> 
+  
+</footer>
+
+
+  </body>
+</html>
+

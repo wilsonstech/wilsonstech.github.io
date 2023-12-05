@@ -1,0 +1,28 @@
+.code-container {
+  position: relative;
+  border: 1px solid #2ed573; /* Green border */
+  overflow: auto;
+  padding: 10px;
+  background-color: #222; /* Dark background color */
+  color: #ddd; /* Light grey text */
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the flex container */
+  margin: -1px; /* Counteract the border to prevent double border appearance */
+}
+
+.copy-button {
+  background-color: #222;
+  color: white;
+  border: 1px solid #2ed573;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto; /* Push the button to the right */
+}
+
+.copy-button:hover {
+  background-color: #2ed573; /* Dark grey background color on hover, adjust if needed */
+}

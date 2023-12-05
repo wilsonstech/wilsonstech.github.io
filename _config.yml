@@ -1,0 +1,24 @@
+title: "Matthews-Project-Vault"
+tagline: "Ruby, Jekyll, HACKED"
+description: "Project-site"
+github_username: Matthew-a-smith
+baseurl: ""
+url: "https://WilsonsTech.github.io"
+
+plugins:
+  - paginate  # Make sure this is at the top of the list
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+
+header_pages:
+  - index.md
+  - blog.md
+  - about_me.md
+
+
+paginate: 3
+paginate_path: "/blog/page:num/"
+
+font-size: large

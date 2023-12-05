@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+{% assign target_semester = page.semester | default: "One" %}
+
+{% for course in site.data.courses %}
+    {% if course.semester == target_semester %}
+
+<div class="article-card">
+    <h2>{{ course.code }} - {{ course.title }}</h2>
+    <p>{{ course.description }}</p>
+</div>
+
+    {% endif %}
+{% endfor %}

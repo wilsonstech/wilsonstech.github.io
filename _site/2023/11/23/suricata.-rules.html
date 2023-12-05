@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6T387BP097"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6T387BP097');
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <title>
+    Suricata Rules - Matthews-Project-Vault
+  </title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="/assets%5Cfavi.svg">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script type="text/javascript" src="/assets/js/copy.js"></script>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Suricata Rules | Matthews-Project-Vault</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Suricata Rules" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Suricata rules are written in a custom rule language. Each rule consists of different fields, including the action, protocol, source and destination IP addresses, ports, and optional rule options" />
+<meta property="og:description" content="Suricata rules are written in a custom rule language. Each rule consists of different fields, including the action, protocol, source and destination IP addresses, ports, and optional rule options" />
+<link rel="canonical" href="http://localhost:4000/2023/11/23/suricata.-rules.html" />
+<meta property="og:url" content="http://localhost:4000/2023/11/23/suricata.-rules.html" />
+<meta property="og:site_name" content="Matthews-Project-Vault" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-23T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Suricata Rules" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-23T00:00:00-04:00","datePublished":"2023-11-23T00:00:00-04:00","description":"Suricata rules are written in a custom rule language. Each rule consists of different fields, including the action, protocol, source and destination IP addresses, ports, and optional rule options","headline":"Suricata Rules","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/11/23/suricata.-rules.html"},"url":"http://localhost:4000/2023/11/23/suricata.-rules.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+</head>
+
+
+  <body class="large">
+
+    <header>
+  <div class="menu">
+    <ul>
+      <li class="page_title">Suricata Rules</li>
+<li><a href="/">/home</a></li>
+<li><a href="/blog/">/Projects</a></li>
+<li><a href="/about_me.html">/About-me</a></li>
+</ul>
+  </div>
+</header>
+
+
+    
+
+<h1></h1>
+
+<p>Suricata rules are written in a custom rule language. Each rule consists of different fields, including the action, protocol, source and destination IP addresses, ports, and optional rule options</p>
+
+<h1 id="the-basic-format-of-a-suricata-rule-is-as-follows">The basic format of a Suricata rule is as follows:</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>action proto source_ip source_port -&gt; dest_ip dest_port (rule options)
+</code></pre></div></div>
+
+<p><strong>action:</strong> The action to take when the rule matches, such as alert to generate an alert.</p>
+
+<p><strong>proto:</strong> The protocol (e.g., tcp, udp) to match.</p>
+
+<p><strong>source_ip/source_port:</strong> The source IP address and port.</p>
+
+<p><strong>dest_ip/dest_port:</strong> The destination IP address and port.</p>
+
+<p><strong>rule options:</strong> Optional parameters that provide additional context to the rule.</p>
+
+<h1 id="simple-suricata-rules">Simple Suricata Rules</h1>
+
+<h1 id="rule-1-alert-on-telnet-traffic">Rule 1: Alert on Telnet Traffic:</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alert tcp $HOME_NET any -&gt; $EXTERNAL_NET 23 (msg:"Telnet Connection Detected"; sid:1000001;)
+</code></pre></div></div>
+
+<p>This rule generates an alert for any Telnet connection from the local network to external servers.</p>
+
+<h1 id="rule-2-block-outbound-smb-traffic">Rule 2: Block Outbound SMB Traffic:</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>drop ip $HOME_NET any -&gt; $EXTERNAL_NET any (msg:"Block Outbound SMB Traffic"; flow:to_server,established; content:"|FF|SMB"; sid:1000002;)
+</code></pre></div></div>
+
+<p>This rule blocks outbound SMB traffic from the local network to external servers.</p>
+
+<h1 id="running-suricata">Running Suricata</h1>
+
+<p><strong>Open a command prompt with administrative privileges.</strong></p>
+
+<p><strong>Navigate to the Suricata installation directory.</strong></p>
+
+<p><strong>Start Suricata with the following command.</strong></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>suricata.exe -c suricata.yaml -k none -S custom_rules.rules
+</code></pre></div></div>
+
+<p><strong><em>Replace custom_rules.rules with the actual filename containing your rules.</em></strong></p>
+
+<p>suricata will start monitoring network traffic based on the specified rules.</p>
+
+<p>Note: Make sure to test rules in a controlled environment before deploying them in a production environment. This artilce differs from my setup article were I share how to install and configure suricatas config_yaml file. In this example when we start suricata we use the following varibles -k and -S options in the Suricata command line have which have specific purposes related to configuration and rule management.</p>
+
+<p><strong>The -k option is used to set a Suricata keyword, which influences certain aspects of the Suricata engine’s behavior.</strong></p>
+
+<p><strong>The -S option is used to specify a rule file or directory containing Suricata rules.</strong></p>
+
+<p>In my example, -k none is used to set the keyword to “none,” which means that Suricata will not load any default configuration files. Instead, it relies solely on the specified configuration file (in our case, suricata.yaml). This can be useful when you want to have full control over the configuration and avoid potential conflicts with default settings.</p>
+
+<p>The -S specifies a rule file. This file contains the custom Suricata rules that you want Suricata to use for traffic analysis.(in our case, custom_rules.rules)</p>
+
+<p>These are basic examples, and you should tailor them to your specific network environment and security requirements.</p>
+
+<h1 id="my-other-knowledge-based-guide-on-how-to-install-and-configure-the-yaml-file-can-be-found-here">My other Knowledge Based guide on how to install and configure the yaml file can be found here.</h1>
+
+<ul class="article-card">
+  
+    
+  
+    
+  
+    
+      <li>
+        <a href="/2023/11/22/suricata.html" class="article-list">Suricata</a>
+        <span class="post-meta article-meta">Nov 22, 2023</span>
+      </li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+  
+  Matthews-Project-Vault/
+  <br><br>
+  Built with <img class="emoji" title=":heart:" alt=":heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> using Jekyll hosted on GitHub Pages.
+   <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20"> <a href="https://github.com/Matthew-a-smith">@Matthew-a-smith</a> 
+  
+</footer>
+
+
+  </body>
+</html>
+
