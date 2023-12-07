@@ -7,10 +7,15 @@
 
     {% include header.html %}
 
-    {{ content }}
+    <div class="main-container">
+      <div class="main-content">
+        {{ content }}
+      </div>
+
+      {% include adsense.html %}
+    </div>
 
     {% include footer.html %}
 
   </body>
 </html>
-
