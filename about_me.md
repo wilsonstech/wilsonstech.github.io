@@ -5,22 +5,21 @@ detail_image: assets\about-me.svg
 permalink_name: /About-me
 ---
 
+<section>
 
+<h1> A Bit About Myself </h1>
 
+I am an upcoming graduate in cybersecurity with a dedicated focus on becoming a penetration tester. My passion lies in identifying and addressing vulnerabilities across the digital landscape.
+<br><br>
+In addition to my academic pursuits, I am an avid animal lover, proud owner of a 3-year-old goldendoodle named Wilson. During my free time, you'll often find us exploring local parks and enjoying the scenic trails in our community.
+<br><br>
+I am deeply engaged in refining my technical skills. I dedicate substantial time to diverse computer projects, utilizing my passion for programming. My exploration includes leveraging advanced technologies such as the Raspberry Pi, where I actively contribute to the creation of innovative programs and projects.
+</section>
 
-## A Bit About Myself
+<section>
 
-I am a upcomeing Graduate in cybersecurity on a journey to become a penetration tester. My focus is on making digital spaces more secure by finding and fixing vulnerabilities.
-
-I love animals, I have a 3 year old goldendoodle his name is wilson, we spend alot of going hikeing thru various trails and geocaching, I also enjoy fly fishing, a fun challenge compared to normal fishing. When im not outdoors I like to spend alot of time working on various projects on my computer, I really have a love for programming and enjoy useing my raspberry pi and creating diffrent programs or diffrent projects.  
-
----
-
-## Education
-
-### School Courses
-
-**Year One and Two**
+<h1> Education </h1>
+<h2> School Courses </h2>
 
 <div class="article-list">
   <ul class="post-list" style="margin-right: 20px;">
@@ -50,12 +49,13 @@ I love animals, I have a 3 year old goldendoodle his name is wilson, we spend al
   </ul>
 </div>
 
----
+</section>
 
-## Certificates
+<section>
+
+<h2> Certificates </h2>
 
 <div class="image-grid">
-  
   <div class="image-item">
     <img src="/assets/endpoint-security.png" alt="Endpoint Security Certificate">
     <p>Endpoint Security</p>
@@ -65,63 +65,23 @@ I love animals, I have a 3 year old goldendoodle his name is wilson, we spend al
     <img src="/assets/introduction-to-cybersecurity.png" alt="Introduction to Cybersecurity Certificate">
     <p>Introduction to Cybersecurity</p>
   </div>
-
 </div>
 
----
-## Connect with Me
+</section>
 
-Find me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/matthew-smith-76315425b/){:target="_blank"}
+<section>
 
----
+<h1> Connect with Me </h1>
+
+Find me on LinkedIn -- <a href="https://www.linkedin.com/in/matthew-smith-76315425b/" target="_blank">LinkedIn Profile</a>
+
+</section>
 
 ## Community Involvement
 
-Outside the cybersecurity realm, I'm an active member of various communities here are just a few of my favourites I love giveing back too.
+Outside cybersecurity, I'm an active member of various communities. Here are just a few of my favorites I love giving back to.
 
-**Zooniverse -**  citizen science web portal owned and operated by the Citizen Science Alliance. It is home to some of the Internet's largest, most popular and most successful citizen science projects.
+**Zooniverse -** a citizen science web portal owned and operated by the Citizen Science Alliance. It is home to some of the Internet's largest, most popular, and most successful citizen science projects.
 
-**Einstein@home -** volunteer computing project that searches for signals from spinning neutron stars in data from gravitational-wave detectors
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Einstein@home -** a volunteer computing project that searches for signals from spinning neutron stars in data from gravitational-wave detectors
 

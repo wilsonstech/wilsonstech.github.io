@@ -8,13 +8,13 @@ detail_image: assets\home_screen_deatil_header.svg
 
 # Welcome to My Website
 
- Hey there, I'm Matt, Smith, not Matt, Smith just another Matt, Smith.
- 
- Welcome to my site, this is my online portfolio. My field of study is cybersecurity, with a focus on encryption algorithms, IoT device security, and programming.
+Hey there I'm Matt Smith, not Matt Smith, just another Matt Smith.
+
+Welcome to my site this is my online portfolio. My field of study is cybersecurity, with a focus on encryption algorithms, IoT device security, and programming.
 
 ---
 
-### Areas of Expertise
+## Areas of Expertise
 
 **Encryption Algorithms**
 ***- Diffie-Hellman, RSA, MD5, HTTPS, TLS***
@@ -28,35 +28,87 @@ detail_image: assets\home_screen_deatil_header.svg
 **Programming**
 ***- Python, JavaScript, SQL, Ruby, C++***
 
-**Security Focus:** My primary focus is on identifying and mitigating security vulnerabilities to create safer digital environments.
-  
-**Technical Proficiency:** Proficient in various cybersecurity tools and techniques, with a knack for staying ahead in a rapidly changing tech landscape.
-  
+**Security Focus:** My primary focus is on identifying and mitigating security vulnerabilities.
+
+**Technical Proficiency:** Proficient in various cybersecurity tools and techniques.
+
 **Continuous Learner:** I thrive on the challenge of staying informed about the latest trends, tools, and best practices in the cybersecurity field.
 
 ---
 
-Check out my [about me](/about_me) page for more information on my experience and qualifications.
+<section>
 
----
+<h1> Latest Projects </h1>
 
-## Latest Projects
-
-<ul class="post-list">
+<div class="article-list">
   {% assign count = 0 %}
   {% for post in site.posts %}
     {% if count < 1 %}
-      <li class="article-card">
+      <div class="article-card">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>{{ post.title | escape }}</h2>
-        <div class="post-content">
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-        </div>
-      </li>
+      </div>
       {% assign count = count | plus: 1 %}
     {% endif %}
   {% endfor %}
-</ul>
+</div>
 
-Explore my [articles](/blog) page, where I share projects from my classes and insights into interesting cybersecurity fields.
+Explore my <a href="/blog" >articles</a> page, where I share projects from my classes and insights into interesting cybersecurity fields.
+
+</section>
+
+---
+
+<section>
+
+<h1> A Little About My Site </h1>
+
+Building this site was a side project for me while I go to school. I built this site entirely myself, using Jekyll. It introduced me to the Ruby programming language and how to use GitHub through my command line.
+<br>
+A copy of this site is available on my GitHub repository, wilsons-private-vault. I built this site with Jekyll's default template, Minima. I give permission for anyone to use my template on their Jekyll site. If you want to build a site and use my template, just follow Jekyll's documentation and grab a copy of my site to use as a template.
+
+<a href="https://jekyllrb.com/docs/" target="_blank">Jekyll Docs</a>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
