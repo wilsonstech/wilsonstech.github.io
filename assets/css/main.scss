@@ -32,7 +32,7 @@ body {
   color: #f5f5f5; /* Darker text color for improved readability */
   font-family: 'Source Code Pro', monospace;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 800px; /* Slightly wider for improved readability */
   line-height: 1.6em;
   font-size: 0.9em; /* Slightly larger font size for improved readability */
@@ -147,6 +147,7 @@ img.home_header {
   width: 100%;
   margin-top: 0; /* Remove top margin */
   margin-bottom: 0; /* Remove bottom margin */
+  max-width: 800px; /* Slightly wider for improved readability */
 }
 
 img.detail_header {
@@ -178,6 +179,7 @@ img.detail_header {
 
 /* Article list styles */
 .article-list {
+  
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -248,7 +250,7 @@ footer {
   color: #DDD;
   border-top: dashed 2px rgba(219, 219, 219, 1);
   margin: 20px auto 15px;
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -258,7 +260,8 @@ footer {
 
 /* Change the color of italic text */
 em {
-  color: #FF5733; /* Change this to the desired color */
+  color: #FF5733;
+  font-size: 80%;   /* Change this to the desired color */
 }
 
 /* Change the color of bold text */
@@ -323,8 +326,38 @@ strong {
 }
 
 section {
-  margin-bottom: 30px;
+  padding: 10px;
+  color: #DDD;
+  text-align: left;
+  width: 100%; /* Adjust width based on your design */
+  margin-bottom: 10px;
 }
+
+.content {
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #222; /* Background color for the content container */
+  border: 1px solid #2ecc71; /* Border for the content container */
+  padding: 20px; /* Padding inside the content container */
+  overflow: hidden; /* Clear float */
+}
+
+img {
+  max-width: 100%;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

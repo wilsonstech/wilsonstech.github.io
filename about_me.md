@@ -5,19 +5,25 @@ detail_image: assets\about-me.svg
 permalink_name: /About-me
 ---
 
-<section>
-
+<div>
 <h1> A Bit About Myself </h1>
+</div>
 
-I am an upcoming graduate in cybersecurity with a dedicated focus on becoming a penetration tester. My passion lies in identifying and addressing vulnerabilities across the digital landscape.
-<br><br>
-In addition to my academic pursuits, I am an avid animal lover, proud owner of a 3-year-old goldendoodle named Wilson. During my free time, you'll often find us exploring local parks and enjoying the scenic trails in our community.
-<br><br>
-I am deeply engaged in refining my technical skills. I dedicate substantial time to diverse computer projects, utilizing my passion for programming. My exploration includes leveraging advanced technologies such as the Raspberry Pi, where I actively contribute to the creation of innovative programs and projects.
-</section>
+<div class="content">
+    <img src="/assets/wilson.svg" alt="Your Image">
+    <p>
+     I am an upcoming graduate in cybersecurity with a dedicated focus on becoming a penetration tester. My passion lies in identifying and addressing 
+     vulnerabilities across the digital landscape.
+    </p>
+    <p>
+    In addition to my academic pursuits, I am an avid animal lover, proud owner of a 3-year-old goldendoodle named Wilson. During my free time, you'll often find us exploring local parks and enjoying the scenic trails in our community.
+    </p>
+    <p>
+    I am deeply engaged in refining my technical skills. I dedicate substantial time to diverse computer projects, utilizing my passion for programming. My exploration includes leveraging advanced technologies such as the Raspberry Pi, where I actively contribute to the creation of innovative programs and projects.
+    </p>
+</div>
 
 <section>
-
 <h1> Education </h1>
 <h2> School Courses </h2>
 
@@ -48,11 +54,9 @@ I am deeply engaged in refining my technical skills. I dedicate substantial time
     </li>
   </ul>
 </div>
-
 </section>
 
 <section>
-
 <h2> Certificates </h2>
 
 <div class="image-grid">
@@ -66,15 +70,12 @@ I am deeply engaged in refining my technical skills. I dedicate substantial time
     <p>Introduction to Cybersecurity</p>
   </div>
 </div>
-
 </section>
 
 <section>
-
 <h1> Connect with Me </h1>
 
 Find me on LinkedIn -- <a href="https://www.linkedin.com/in/matthew-smith-76315425b/" target="_blank">LinkedIn Profile</a>
-
 </section>
 
 ## Community Involvement

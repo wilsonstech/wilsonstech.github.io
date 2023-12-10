@@ -7,7 +7,7 @@ a:hover { color: var(--bg-color); background-color: var(--alt-color); }
 a[target="_blank"] { background-color: #222; /* You can change this color code */ padding: 4px 8px; /* Optional: Add some padding for better visual appearance */ border-radius: 8px; /* Optional: Add rounded corners for better visual appearance */ }
 
 /* BASE */
-body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Darker text color for improved readability */ font-family: 'Source Code Pro', monospace; margin: 0 auto; width: 90%; max-width: 800px; /* Slightly wider for improved readability */ line-height: 1.6em; font-size: 0.9em; /* Slightly larger font size for improved readability */ }
+body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Darker text color for improved readability */ font-family: 'Source Code Pro', monospace; margin: 0 auto; width: 100%; max-width: 800px; /* Slightly wider for improved readability */ line-height: 1.6em; font-size: 0.9em; /* Slightly larger font size for improved readability */ }
 
 h1, h3, h4, h5, h6 { font-weight: bold; color: #f5f5f5; /* Darker heading color for contrast */ font-size: 1.3em; /* Larger heading font size for emphasis */ }
 
@@ -47,7 +47,7 @@ div.error_box h1 { font-size: 2em; }
 /* HEADER */
 header { margin-top: 10px; /* Slightly reduce the top margin for better focus */ margin-bottom: 10px; }
 
-img.home_header { width: 100%; margin-top: 0; /* Remove top margin */ margin-bottom: 0; /* Remove bottom margin */ }
+img.home_header { width: 100%; margin-top: 0; /* Remove top margin */ margin-bottom: 0; /* Remove bottom margin */ max-width: 800px; /* Slightly wider for improved readability */ }
 
 img.detail_header { width: 100%; /* Make sure the image takes the full width */ margin-top: 10px; /* Adjust top margin for better focus */ margin-bottom: 10px; /* Adjust bottom margin for better focus */ }
 
@@ -80,12 +80,12 @@ img.detail_header { width: 100%; /* Make sure the image takes the full width */ 
 
 .pagination-item.disabled { color: #999; cursor: not-allowed; }
 
-footer { background-color: #333; color: #DDD; border-top: dashed 2px #dbdbdb; margin: 20px auto 15px; padding-top: 10px; text-align: center; }
+footer { background-color: #333; color: #DDD; border-top: dashed 2px #dbdbdb; margin: 20px auto 15px; padding-top: 20px; text-align: center; }
 
 .footer-separator { margin-top: 40px; }
 
 /* Change the color of italic text */
-em { color: #FF5733; /* Change this to the desired color */ }
+em { color: #FF5733; font-size: 80%; /* Change this to the desired color */ }
 
 /* Change the color of bold text */
 strong { color: #2ed573; /* Change this to the desired color */ }
@@ -111,4 +111,8 @@ strong { color: #2ed573; /* Change this to the desired color */ }
 
 .adsbygoogle { margin-top: 12px; margin-bottom: 12px; background-color: #222; color: #DDD; padding: 20px; }
 
-section { margin-bottom: 30px; }
+section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust width based on your design */ margin-bottom: 10px; }
+
+.content { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
+
+img { max-width: 100%; float: left; margin-right: 20px; margin-bottom: 10px; }
