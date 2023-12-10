@@ -21,10 +21,6 @@ Incident response planning is proactive rather than reactive. It helps organizat
 
 ## Key Components of an Incident Response Plan
 
-1. Preparation
-
-**- Define Roles and Responsibilities:** Clearly outline the roles and responsibilities of individuals involved in the incident response process.
-
 # 1. Introduction:
 
 **Purpose and Objectives:** Clearly state the purpose and objectives of the incident response plan.
