@@ -47,9 +47,9 @@ div.error_box h1 { font-size: 2em; }
 /* HEADER */
 header { margin-top: 10px; /* Slightly reduce the top margin for better focus */ margin-bottom: 10px; }
 
-img.home_header { width: 100%; margin-top: 0; /* Remove top margin */ margin-bottom: 0; /* Remove bottom margin */ max-width: 800px; /* Slightly wider for improved readability */ }
+img.home_header { width: 100%; background-color: #333; /* Background color for the content container */ border-width: 3px; border-style: dotted dashed solid dashed; border-color: #2ecc71; /* Border for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; max-width: 100%; /* Slightly wider for improved readability */ }
 
-img.detail_header { width: 100%; /* Make sure the image takes the full width */ margin-top: 10px; /* Adjust top margin for better focus */ margin-bottom: 10px; /* Adjust bottom margin for better focus */ }
+img.detail_header { background-color: #333; /* Background color for the content container */ border-width: 3px; border-style: dotted dashed solid dashed; border-color: #2ecc71; /* Border for the content container */ width: 100%; /* Make sure the image takes the full width */ padding-top: 20px; padding-bottom: 20px; margin: auto; }
 
 /* Pager styles */
 .pager { display: flex; justify-content: space-between; margin-top: 20px; }
@@ -113,6 +113,16 @@ strong { color: #2ed573; /* Change this to the desired color */ }
 
 section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust width based on your design */ margin-bottom: 10px; }
 
-.content { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
+.content-main { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
 
-img { max-width: 100%; float: left; margin-right: 20px; margin-bottom: 10px; }
+.content { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ display: flex; align-items: flex-start; /* Align items at the start of the cross axis */ flex-wrap: wrap; }
+
+.img-content { max-width: 50%; margin-right: 20px; }
+
+.img-content img { background-color: #222; /* Background color for the content container */ border: 2px solid #2ecc71; /* Border for the content container */ max-width: 100%; }
+
+.caption { text-align: center; margin-top: 10px; /* Adjust the margin as needed */ }
+
+.text-content { flex: 1; }
+
+.description-text { font-size: 80%; color: #DDD; /* Your desired color for the description text */ }

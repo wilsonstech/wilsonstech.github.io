@@ -10,18 +10,23 @@ permalink_name: /About-me
 </div>
 
 <div class="content">
-    <img src="/assets/wilson.svg" alt="Your Image">
+  <div class="img-content">
+    <img src="/assets/wilson.svg" alt="My dog wilson">
+    <p class="caption">Wilson my Dood</p>
+  </div>
+  <div class="text-content">
     <p>
-     I am an upcoming graduate in cybersecurity with a dedicated focus on becoming a penetration tester. My passion lies in identifying and addressing 
-     vulnerabilities across the digital landscape.
+      I am an upcoming graduate in cybersecurity with a dedicated focus on becoming a penetration tester. My passion lies in identifying and addressing vulnerabilities across the digital landscape.
     </p>
     <p>
-    In addition to my academic pursuits, I am an avid animal lover, proud owner of a 3-year-old goldendoodle named Wilson. During my free time, you'll often find us exploring local parks and enjoying the scenic trails in our community.
+      In addition to my academic pursuits, I am an avid animal lover, proud owner of a 3-year-old goldendoodle. During my free time, you'll often find us exploring local parks and enjoying the scenic trails in our community.
     </p>
     <p>
-    I am deeply engaged in refining my technical skills. I dedicate substantial time to diverse computer projects, utilizing my passion for programming. My exploration includes leveraging advanced technologies such as the Raspberry Pi, where I actively contribute to the creation of innovative programs and projects.
+      I am deeply engaged in refining my technical skills. I dedicate substantial time to diverse computer projects, utilizing my passion for programming. My exploration includes leveraging advanced technologies such as the Raspberry Pi, where I actively contribute to the creation of innovative programs and projects.
     </p>
+  </div>
 </div>
+
 
 <section>
 <h1> Education </h1>
@@ -78,11 +83,27 @@ permalink_name: /About-me
 Find me on LinkedIn -- <a href="https://www.linkedin.com/in/matthew-smith-76315425b/" target="_blank">LinkedIn Profile</a>
 </section>
 
-## Community Involvement
+<div class="section">
+<h1>Community Involvement</h1>
+  
+  <div class="content-main">
+  <p>Outside cybersecurity, I'm an active member of various communities. Here are just a few of my favorites I love giving back to.</p>  
+ 
+  <h2>
+  Zooniverse
+  <span class="description-text">
+  a citizen science web portal owned and operated by the Citizen Science Alliance. It is home to some of the Internet's largest, most  popular, and 
+  most successful citizen science projects.
+  </span>
+  </h2>
+  
+  <h2>
+  Einstein@home 
+  <span class="description-text">
+    a volunteer computing project that searches for signals from spinning neutron stars in data from gravitational-wave detectors
+  </span>
+  </h2>
 
-Outside cybersecurity, I'm an active member of various communities. Here are just a few of my favorites I love giving back to.
-
-**Zooniverse -** a citizen science web portal owned and operated by the Citizen Science Alliance. It is home to some of the Internet's largest, most popular, and most successful citizen science projects.
-
-**Einstein@home -** a volunteer computing project that searches for signals from spinning neutron stars in data from gravitational-wave detectors
+  </div>
+</div>
 

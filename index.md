@@ -16,12 +16,14 @@ detail_image: assets\home_screen_deatil_header.svg
 
 <div class="section">
 <h1> Areas of Expertise </h1>
-  <div class="content">
+  <div class="content-main">
   <h2> Encryption Algorithms  <em>- Diffie-Hellman, RSA, MD5, HTTPS, TLS</em> </h2>
   <h2> IoT Device Security <em>- TLS/SSL, Baselineing, Network segmentation</em> </h2>
   <h2> IDS (Intrusion Detection Systems) <em>- Snort++, Suricata</em> </h2>
   <h2> Programming <em>- Python, JavaScript, SQL, Ruby, C++</em> </h2>
+  
   <br><hr>
+
   <h2> Security Focus:</h2> My primary focus is on identifying and mitigating security vulnerabilities.
   <h2> Technical Proficiency:</h2> Proficient in various cybersecurity tools and techniques.
   <h2> Continuous Learner:</h2> I thrive on the challenge of staying informed about the latest trends, tools, and best practices in the cybersecurity      field. 
