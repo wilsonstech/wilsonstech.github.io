@@ -30,7 +30,13 @@ permalink_name: /About-me
 
 <section>
 <h1> Education </h1>
-<h2> School Courses </h2>
+
+<h2>
+School Courses --->
+<span class="description-text">
+I studied at nscc with a diploma in cyber security, its one of the only reconigzed programs for cyber security in Nova Scotia. Also reconnigzed thru 
+</span>
+</h2>
 
 <div class="article-list">
   <ul class="post-list" style="margin-right: 20px;">
@@ -61,9 +67,9 @@ permalink_name: /About-me
 </div>
 </section>
 
-<section>
-<h2> Certificates </h2>
+<h1> Certificates </h1>
 
+<div class="content-main">
 <div class="image-grid">
   <div class="image-item">
     <img src="/assets/endpoint-security.png" alt="Endpoint Security Certificate">
@@ -75,13 +81,13 @@ permalink_name: /About-me
     <p>Introduction to Cybersecurity</p>
   </div>
 </div>
-</section>
 
-<section>
+<hr>
+
 <h1> Connect with Me </h1>
 
 Find me on LinkedIn -- <a href="https://www.linkedin.com/in/matthew-smith-76315425b/" target="_blank">LinkedIn Profile</a>
-</section>
+</div>
 
 <div class="section">
 <h1>Community Involvement</h1>

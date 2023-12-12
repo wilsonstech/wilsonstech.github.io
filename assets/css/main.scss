@@ -282,10 +282,11 @@ strong {
 
 /* Style the image grid */
 .image-grid {
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
 }
 
 /* Style individual image items */

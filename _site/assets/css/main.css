@@ -91,7 +91,7 @@ em { color: #FF5733; font-size: 80%; /* Change this to the desired color */ }
 strong { color: #2ed573; /* Change this to the desired color */ }
 
 /* Style the image grid */
-.image-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 5px; }
+.image-grid { margin-bottom: 10px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
 
 /* Style individual image items */
 .image-item { flex: 0 0 calc(33.3333% - 20px); max-width: calc(33.3333% - 20px); text-align: center; }
