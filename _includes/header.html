@@ -1,13 +1,13 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-<header>
-  <div class="menu">
+<header class="menu">
+  <div class="menu-content">
+    <div class="page_title">{{ page.title }}</div>
     <ul>
-      <li class="page_title">{{ page.title }}</li>
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.title -%}
-        <li><a href="{{ my_page.url | relative_url }}">/{{ my_page.permalink_name | replace: " ", "-" | replace: "/", "" | my_page.permalink | replace: "/", "" | ERROR }}</a></li>
+        <li><a href="{{ my_page.url | relative_url }}">{{ my_page.permalink_name | replace: " ", "-" | replace: "/", "" }}</a></li>
         {%- endif -%}
       {%- endfor -%}
     </ul>

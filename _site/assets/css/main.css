@@ -10,25 +10,28 @@ body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Da
 /* Additional styles for the specific page content */
 .content-wrapper { max-width: 900px; margin: 20px auto; padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
 
-/* NAVIGATION */
-.menu { border-top: dashed 2px rgba(219, 219, 219, 0.9); border-bottom: dashed 2px rgba(219, 219, 219, 0.9); margin-bottom: 25px; }
+/* Add this to your existing stylesheet */
+/* Header */
+.menu { background-color: #333; /* Adjust background color as needed */ color: #DDD; border-bottom: dashed 2px rgba(219, 219, 219, 0.9); margin-bottom: 25px; }
 
-.menu ul { margin-top: 12px; margin-bottom: 12px; margin-right: 50px; /* Adjust the pixels as needed */ font-size: 1.3em; padding-left: 0; list-style-type: none; text-align: right; }
+.menu-content { display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; padding: 20px; }
 
-.menu ul li { display: inline; margin-left: 10px; /* Adjust the pixels as needed */ }
+.page_title { font-weight: bold; color: #2ed573; font-size: 1.5em; /* Adjust the font size as needed */ }
 
-.menu ul li a { text-decoration: none; color: rgba(219, 219, 219, 0.9); }
+.menu ul { list-style-type: none; margin: 0; padding: 0; display: flex; }
+
+.menu ul li { margin-left: 20px; }
+
+.menu ul li a { text-decoration: none; color: rgba(219, 219, 219, 0.9); font-size: 1.5em; /* Adjust the font size as needed */ }
 
 .menu ul li a:hover { text-decoration: none; color: black; background-color: #2ed573; }
-
-.menu ul li.page_title { text-align: left; margin-right: 150px; /* Adjust the pixels as needed */ float: left; font-weight: bold; color: #2ed573; }
 
 /* HEADER */
 header { margin-top: 10px; /* Slightly reduce the top margin for better focus */ margin-bottom: 20px; }
 
-img.home_header { width: 100%; background-color: #333; /* Background color for the content container */ border-width: 3px; border-style: dotted dashed solid dashed; border-color: #2ecc71; /* Border for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; max-width: 100%; /* Slightly wider for improved readability */ }
+img.home_header { width: 100%; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
 
-img.detail_header { background-color: #333; /* Background color for the content container */ border-width: 3px; border-style: dotted dashed solid dashed; border-color: #2ecc71; /* Border for the content container */ width: 100%; /* Make sure the image takes the full width */ padding-top: 20px; padding-bottom: 20px; margin: auto; }
+img.detail_header { width: 100%; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
 
 a[target="_blank"] { background-color: #222; /* You can change this color code */ padding: 4px 8px; /* Optional: Add some padding for better visual appearance */ border-radius: 8px; /* Optional: Add rounded corners for better visual appearance */ }
 
@@ -66,9 +69,9 @@ div.error_box h1 { font-size: 2em; }
 /* Article list styles */
 .article-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: left; /* Center articles within the container */ }
 
-.article-card { background-color: #222; padding: 5px; border: 1px solid #2ed573; color: #DDD; text-align: left; width: 100%; /* Adjust width based on your design */ box-sizing: border-box; /* Include padding in width calculation */ margin-bottom: 10px; transition: background-color 0.3s, transform 0.3s; }
+.article-card { background-color: #222; padding: 10px; border: 1px solid #2ed573; color: #DDD; text-align: left; width: 100%; box-sizing: border-box; margin-bottom: 10px; transition: background-color 0.3s, transform 0.3s; }
 
-.article-card .read-more { display: inline-block; padding: 4px 8px; background-color: #222; color: #2ed573; text-decoration: none; border-radius: 4px; border: 1px solid #2ed573; /* Border color same as the article card background */ transition: background-color 0.3s, border-color 0.3s; }
+.article-card .read-more { display: inline-block; padding: 4px 8px; background-color: #222; color: #2ed573; text-decoration: none; border-radius: 4px; border: 1px solid #2ed573; /* Border color same as the article card background */ transition: background-color 0.3s, transform 0.3s; }
 
 .article-card .read-more:hover { color: #2ed573; /* Green text color on hover */ background-color: #444; /* Dark grey background color on hover, adjust if needed */ }
 
@@ -129,3 +132,13 @@ section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust w
 .text-content { flex: 1; }
 
 .description-text { font-size: 80%; color: #DDD; /* Your desired color for the description text */ }
+
+.home-page-article-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+
+.home-page-article-card { background-color: #222; padding: 10px; border: 1px solid #2ed573; color: #DDD; text-align: left; width: 100%; box-sizing: border-box; margin-bottom: 10px; transition: background-color 0.3s, transform 0.3s; }
+
+.home-page-article-card:hover:hover { background-color: #2ed573; transform: scale(1.02); }
+
+.home-page-article-card h2 { font-size: 1.2em; /* Adjust the font size as needed */ color: #2ed573; }
+
+.home-page-article-card p { font-size: 1em; /* Adjust the font size as needed */ }

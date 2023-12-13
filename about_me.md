@@ -34,7 +34,7 @@ permalink_name: /About-me
 <h2>
 School Courses --->
 <span class="description-text">
-I studied at nscc with a diploma in cyber security, its one of the only reconigzed programs for cyber security in Nova Scotia. Also reconnigzed thru 
+I studied at nscc with a diploma in cyber security, its one of the only reconigzed programs for cyber security in Nova Scotia. 
 </span>
 </h2>
 
