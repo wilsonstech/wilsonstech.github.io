@@ -1,0 +1,30 @@
+---
+layout: project-page
+title: networking
+category: networking
+permalink: /blog/networking/
+---
+
+<h1 class="page-title">{{ page.title }}</h1>
+
+<ul class="article-list">
+  {% for post in site.categories.networking %}
+    <li class="article-card">
+      <a href="{{ post.url | relative_url }}" class="card-link">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>{{ post.title | escape }}</h2>
+        <div class="post-content">
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+

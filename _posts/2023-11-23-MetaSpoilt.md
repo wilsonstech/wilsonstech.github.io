@@ -2,6 +2,7 @@
 layout: post
 title: "MetaSpoilt"
 date: "2023-11-21"
+categories: [school-projects]
 published: true
 ---
 

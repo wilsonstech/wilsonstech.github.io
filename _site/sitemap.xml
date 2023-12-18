@@ -68,6 +68,12 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/blog/networking/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/school-projects/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/blog/page2/</loc>
 </url>
 <url>

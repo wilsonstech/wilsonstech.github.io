@@ -11,6 +11,12 @@ body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Da
 .content-wrapper { max-width: 900px; margin: 20px auto; padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
 
 /* Add this to your existing stylesheet */
+.category-buttons { display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; padding: 20px; }
+
+.category-buttons ul { list-style-type: none; margin: 0; padding: 0; display: flex; }
+
+.category-buttons ul li { margin-left: 20px; }
+
 /* Header */
 .menu { background-color: #333; /* Adjust background color as needed */ color: #DDD; border-bottom: dashed 2px rgba(219, 219, 219, 0.9); margin-bottom: 25px; }
 
@@ -27,11 +33,11 @@ body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Da
 .menu ul li a:hover { text-decoration: none; color: black; background-color: #2ed573; }
 
 /* HEADER */
-header { margin-top: 10px; /* Slightly reduce the top margin for better focus */ margin-bottom: 20px; }
+header { align-content: center; width: auto; margin-top: 10px; /* Slightly reduce the top margin for better focus */ margin-bottom: 20px; }
 
-img.home_header { width: 100%; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
+img.home_header { max-width: 900px; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
 
-img.detail_header { width: 100%; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
+img.detail_header { max-width: 900px; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
 
 a[target="_blank"] { background-color: #222; /* You can change this color code */ padding: 4px 8px; /* Optional: Add some padding for better visual appearance */ border-radius: 8px; /* Optional: Add rounded corners for better visual appearance */ }
 
@@ -142,3 +148,7 @@ section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust w
 .home-page-article-card h2 { font-size: 1.2em; /* Adjust the font size as needed */ color: #2ed573; }
 
 .home-page-article-card p { font-size: 1em; /* Adjust the font size as needed */ }
+
+.card-link { display: block; text-decoration: none; color: #222; /* Set your desired text color */ }
+
+.card-link:hover { background-color: #ddd; /* Set your desired hover background color */ }

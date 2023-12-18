@@ -2,6 +2,8 @@
 layout: post
 title: "The Complex Reality of Eyewitness Testimony"
 date: "2023-11-06"
+categories: [school-projects]
+collection: school-projects
 published: true
 ---
 

@@ -1,22 +1,25 @@
 ---
-layout: default
+layout: project-page
 title: Projects
----
- 
-  <h1 class="page-title">{{ page.title }}</h1>
+categories: # Add this section to specify available categories
+- school-projects
+- networking
+--- 
 
-  <ul class="article-list">
-    {% for post in paginator.posts %}
-      <li class="article-card">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>{{ post.title | escape }}</h2>
-        <div class="post-content">
-          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+<h1 class="page-title">{{ page.title }}</h1>
+
+<ul class="article-list">
+  {% for post in paginator.posts %}
+    <li class="article-card">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>{{ post.title | escape }}</h2>
+      <div class="post-content">
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
 
   <div class="pagination">
     {% if paginator.total_pages > 0 %}
@@ -32,4 +35,30 @@ title: Projects
       {% endif %}
     {% endif %}
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -41,6 +41,25 @@ body {
 }
 
 /* Add this to your existing stylesheet */
+.category-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.category-buttons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.category-buttons ul li {
+margin-left: 20px;
+}
 
 /* Header */
 .menu {
@@ -91,12 +110,14 @@ body {
 
 /* HEADER */
 header {
+  align-content: center;
+  width: auto;
   margin-top: 10px; /* Slightly reduce the top margin for better focus */
   margin-bottom: 20px;
 }
 
 img.home_header {
-  width: 100%;
+  max-width: 900px;
   background-color: #333; /* Background color for the content container */
   margin: auto;
   padding-top: 20px;
@@ -106,7 +127,7 @@ img.home_header {
 }
 
 img.detail_header {
-  width: 100%;
+  max-width: 900px;
   background-color: #333; /* Background color for the content container */
   margin: auto;
   padding-top: 20px;
@@ -439,6 +460,15 @@ section {
   font-size: 1em; /* Adjust the font size as needed */
 }
 
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: #222; /* Set your desired text color */
+}
+
+.card-link:hover {
+  background-color: #ddd; /* Set your desired hover background color */
+}
 
 
 

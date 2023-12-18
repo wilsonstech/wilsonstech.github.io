@@ -1,0 +1,71 @@
+---
+layout: project-page
+title: school-projects
+category: school-projects
+permalink: /blog/school-projects/
+---
+
+<h1 class="page-title">{{ page.title }}</h1>
+
+<ul class="article-list">
+  {% for post in site.categories.school-projects %}
+    <li class="article-card">
+      <a href="{{ post.url | relative_url }}" class="card-link">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>{{ post.title | escape }}</h2>
+        <div class="post-content">
+          <!-- Remove the "Read more" link -->
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

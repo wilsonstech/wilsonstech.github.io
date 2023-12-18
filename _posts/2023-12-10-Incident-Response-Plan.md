@@ -2,6 +2,7 @@
 layout: post
 title: "Incident Response Plan"
 date: "2023-12-10"
+categories: [school-projects]
 published: true
 ---
 

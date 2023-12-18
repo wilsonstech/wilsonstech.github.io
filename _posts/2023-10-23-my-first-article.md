@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Building a Digital Fortress"
+title: "My first article"
 date: "2023-10-06"
+categories: [networking]
+collection: school-projects
 published: true
 ---
 
