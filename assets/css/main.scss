@@ -43,11 +43,12 @@ body {
 /* Add this to your existing stylesheet */
 .category-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .category-buttons ul {
@@ -58,15 +59,23 @@ body {
 }
 
 .category-buttons ul li {
-margin-left: 20px;
+  margin-right: 20px;
+}
+
+.category-buttons ul li a {
+  text-decoration: none;
+  color: rgba(219, 219, 219, 0.9);
+  font-size: 0.9em; /* Adjust the font size as needed */
 }
 
 /* Header */
 .menu {
-  background-color: #333; /* Adjust background color as needed */
+  max-width: 100%;
+  background-color: #333;
   color: #DDD;
-  border-bottom: dashed 2px rgba(219, 219, 219, 0.9);
   margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .menu-content {
@@ -75,30 +84,40 @@ margin-left: 20px;
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  margin-left: 100px;
 }
 
 .page_title {
   font-weight: bold;
-  color: #2ed573;
-  font-size: 1.5em; /* Adjust the font size as needed */
+  color: #ddd;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.menu-nav {
+  margin: 10px;
 }
 
 .menu ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
 }
 
 .menu ul li {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu ul li a {
   text-decoration: none;
   color: rgba(219, 219, 219, 0.9);
-  font-size: 1.5em; /* Adjust the font size as needed */
+  font-size: 1.2em;
 }
 
 .menu ul li a:hover {
@@ -106,7 +125,6 @@ margin-left: 20px;
   color: black;
   background-color: #2ed573;
 }
-
 
 /* HEADER */
 header {

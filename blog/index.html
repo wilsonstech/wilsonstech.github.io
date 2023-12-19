@@ -6,8 +6,17 @@ categories: # Add this section to specify available categories
 - networking
 --- 
 
-<h1 class="page-title">{{ page.title }}</h1>
+<div class="category-buttons" style="margin-bottom: 20px;">
+  <div class="page_title">Categories</div>
+  <ul>
+    <li><a href="{{ site.baseurl }}/blog" style="font-size: 0.9em;">All</a></li>
+    {% for category in page.categories %}
+      <li><a href="{{ site.baseurl }}/blog/{{ category | downcase }}" style="font-size: 0.9em;">{{ category | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 
+<div class="page_title">Articles</div>
 <ul class="article-list">
   {% for post in paginator.posts %}
     <li class="article-card">
@@ -21,20 +30,43 @@ categories: # Add this section to specify available categories
   {% endfor %}
 </ul>
 
-  <div class="pagination">
-    {% if paginator.total_pages > 0 %}
-      {% if paginator.previous_page %}
-        <a class="pagination-item" href="{{ paginator.previous_page_path | relative_url }}" rel="prev">← Previous</a>
-      {% else %}
-        <span class="pagination-item disabled">← Previous</span>
-      {% endif %}
-      {% if paginator.next_page %}
-        <a class="pagination-item" href="{{ paginator.next_page_path | relative_url }}" rel="next">Next →</a>
-      {% else %}
-        <span class="pagination-item disabled">Next →</span>
-      {% endif %}
+<div class="pagination">
+  {% if paginator.total_pages > 0 %}
+    {% if paginator.previous_page %}
+      <a class="pagination-item" href="{{ paginator.previous_page_path | relative_url }}" rel="prev">← Previous</a>
+    {% else %}
+      <span class="pagination-item disabled">← Previous</span>
     {% endif %}
-  </div>
+    {% if paginator.next_page %}
+      <a class="pagination-item" href="{{ paginator.next_page_path | relative_url }}" rel="next">Next →</a>
+    {% else %}
+      <span class="pagination-item disabled">Next →</span>
+    {% endif %}
+  {% endif %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
