@@ -2,7 +2,7 @@
 layout: post
 title: "Navigating the World of Physical Security"
 date: "2023-10-29"
-categories: [school-projects]
+categories: [security]
 collection: school-projects
 published: true
 ---

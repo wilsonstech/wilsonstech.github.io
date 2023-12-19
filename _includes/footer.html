@@ -1,22 +1,8 @@
 <footer>
-  {{ site.title }}/{{ page.permalink_name | replace: "/", "" | replace: " ", "-" }}
+  {{ site.title }} / {{ page.permalink_name | replace: "/", "" | replace: " ", "-" }}
   <br><br>
   <span style="font-size: 1.2em;">Built with ❤️ using Jekyll hosted on GitHub Pages.</span>
   {% if site.github_username and site.github_username != "" %}
-  <span style="font-size: 1.2em;">🐬</span> <a href="https://github.com/{{site.github_username}}">@{{ site.github_username }}</a>
+    <span style="font-size: 1.2em;">🐬</span> <a href="https://github.com/{{site.github_username}}">@{{ site.github_username }}</a>
   {% endif %}
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

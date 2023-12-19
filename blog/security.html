@@ -1,24 +1,24 @@
 ---
 layout: project-page
-title: networking
-category: networking
-permalink: /blog/networking/
+title: security
+category: security
+permalink: /blog/security/
 ---
 
 <div class="category-buttons" style="margin-bottom: 20px;">
-  <div class="page_title">Categories</div>
-  <ul>
-    <li><a href="{{ site.baseurl }}/blog" style="font-size: 0.9em;">All</a></li>
-    {% for category in page.categories %}
-      <li><a href="{{ site.baseurl }}/blog/{{ category | downcase }}" style="font-size: 0.9em;">{{ category | capitalize }}</a></li>
-    {% endfor %}
-  </ul>
+    <div class="page_title">Categories</div>
+    <ul>
+      <li><a href="{{ site.baseurl }}/blog" style="font-size: 0.9em;">All</a></li>
+      {% for category in page.categories %}
+        <li><a href="{{ site.baseurl }}/blog/{{ category | downcase }}" style="font-size: 0.9em;">{{ category | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
 </div>
 
 <h1 class="page-title">{{ page.title }}</h1>
 
 <ul class="article-list">
-  {% for post in site.categories.networking %}
+  {% for post in site.categories.security %}
     <li class="article-card">
       <a href="{{ post.url | relative_url }}" class="card-link">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -29,12 +29,3 @@ permalink: /blog/networking/
     </li>
   {% endfor %}
 </ul>
-
-
-
-
-
-
-
-
-
