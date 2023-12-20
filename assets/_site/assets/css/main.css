@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+@import url("syntax-highlighting.css");
+a:hover { color: var(--bg-color); background-color: var(--alt-color); }
+
+/* Base */
+:root { --main-color: white; --bg-color: black; --text-color: #DDD; --pop-color: white; --alt-color: #2ed573; --light-alt-color: rgba(46, 213, 115); }
+
+body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Darker text color for improved readability */ font-family: 'Source Code Pro', monospace; margin: 0 auto; width: 100%; line-height: 1.6em; font-size: 0.9em; /* Slightly larger font size for improved readability */ }
+
+/* Additional styles for the specific page content */
+.content-wrapper { max-width: 900px; margin: 20px auto; padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
+
+/* Add this to your existing stylesheet */
+.category-buttons { display: flex; justify-content: center; align-items: center; max-width: 900px; margin: 0 auto; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.category-buttons ul { list-style-type: none; margin: 0; padding: 0; display: flex; }
+
+.category-buttons ul li { margin-right: 20px; }
+
+.category-buttons ul li a { text-decoration: none; color: rgba(219, 219, 219, 0.9); font-size: 0.9em; /* Adjust the font size as needed */ }
+
+/* Header */
+.menu { max-width: 100%; background-color: #333; color: #DDD; margin-bottom: 25px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); position: relative; }
+
+.menu-content { display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; }
+
+.header-image { display: flex; align-items: center; max-width: 200px; margin-left: 100px; }
+
+.page_title { font-weight: bold; color: #ddd; font-size: 1.5em; margin-bottom: 20px; }
+
+.menu-nav { margin: 10px; }
+
+.menu ul { list-style-type: none; padding: 0; display: flex; }
+
+.menu ul li { margin-right: 20px; }
+
+.menu ul li a { text-decoration: none; color: rgba(219, 219, 219, 0.9); font-size: 1.2em; }
+
+.menu ul li a:hover { text-decoration: none; color: black; background-color: #2ed573; }
+
+/* HEADER */
+header { align-content: center; width: auto; margin-top: 10px; /* Slightly reduce the top margin for better focus */ margin-bottom: 20px; }
+
+img.home_header { max-width: 900px; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
+
+img.detail_header { max-width: 900px; background-color: #333; /* Background color for the content container */ margin: auto; padding-top: 20px; padding-bottom: 20px; border: none; /* Remove border */ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */ }
+
+a[target="_blank"] { background-color: #222; /* You can change this color code */ padding: 4px 8px; /* Optional: Add some padding for better visual appearance */ border-radius: 8px; /* Optional: Add rounded corners for better visual appearance */ }
+
+h1, h3, h4, h5, h6 { font-weight: bold; color: #f5f5f5; /* Darker heading color for contrast */ font-size: 1.3em; /* Larger heading font size for emphasis */ }
+
+h2 { font-weight: bold; color: #2ed573; font-size: 1.3em; }
+
+p, ul, ol { font-size: 1.1em; /* Slightly larger font size for text content */ color: #f5f5f5; /* Darker text color for improved readability */ }
+
+a { text-decoration: none; color: #2ed573; background-color: #222; padding: 4px 8px; border-radius: 8px; /* Green link color, adjust if needed */ }
+
+a:hover { text-decoration: underline; color: #2ed573; /* Green text color on hover */ background-color: #eee; /* Light grey background color on hover */ }
+
+/* LISTS */
+:not(.menu) > ul { list-style: none; padding-left: 1em; }
+
+ul :not(.menu) > ul { list-style: none; padding-left: 3em; margin-top: 0.5em; margin-bottom: 0.7em; }
+
+/* ERROR PAGES */
+div.error_box { margin: 100px; text-align: center; }
+
+div.error_box h1 { font-size: 2em; }
+
+*::selection { background-color: var(--light-alt-color); color: black; }
+
+/* Pager styles */
+.pager { display: flex; justify-content: space-between; margin-top: 20px; }
+
+.pager li { list-style: none; }
+
+.pager a { text-decoration: none; color: #2ed573; }
+
+.pager a:hover { color: #FFF; background-color: #2ed573; }
+
+/* Article list styles */
+.article-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: left; /* Center articles within the container */ }
+
+.article-card { background-color: #222; padding: 10px; border: 1px solid #2ed573; color: #DDD; text-align: left; width: 100%; box-sizing: border-box; margin-bottom: 10px; transition: background-color 0.3s, transform 0.3s; }
+
+.article-card .read-more { display: inline-block; padding: 4px 8px; background-color: #222; color: #2ed573; text-decoration: none; border-radius: 4px; border: 1px solid #2ed573; /* Border color same as the article card background */ transition: background-color 0.3s, transform 0.3s; }
+
+.article-card .read-more:hover { color: #2ed573; /* Green text color on hover */ background-color: #444; /* Dark grey background color on hover, adjust if needed */ }
+
+.article-card h2 { font-size: 1.4em; color: #2ed573; margin-bottom: 10px; }
+
+.article-card p { font-size: 1em; }
+
+/* Pagination styles */
+.pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; }
+
+.pagination-item { text-decoration: none; color: #2ed573; padding: 8px 12px; border: 1px solid #2ed573; border-radius: 4px; }
+
+.pagination-item.disabled { color: #999; cursor: not-allowed; }
+
+footer { background-color: #333; color: #DDD; border-top: dashed 2px #dbdbdb; margin: 20px auto 15px; padding-top: 20px; text-align: center; }
+
+.footer-separator { margin-top: 40px; }
+
+/* Change the color of italic text */
+em { color: #FF5733; font-size: 80%; /* Change this to the desired color */ }
+
+/* Change the color of bold text */
+strong { color: #2ed573; /* Change this to the desired color */ }
+
+/* Style the image grid */
+.image-grid { margin-bottom: 10px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+
+/* Style individual image items */
+.image-item { flex: 0 0 calc(33.3333% - 20px); max-width: calc(33.3333% - 20px); text-align: center; }
+
+.image-item img { max-width: 100%; }
+
+/* Add space between images and center text */
+.image-item p { margin-top: 10px; }
+
+.course { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; background-color: #222; /* Secondary background color */ }
+
+.course h2 { color: #2ecc71; /* Change this to the desired color */ }
+
+.video-container { padding: 56.25% 0 0 0; position: relative; }
+
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.adsbygoogle { margin-top: 12px; margin-bottom: 12px; background-color: #222; color: #DDD; padding: 20px; }
+
+section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust width based on your design */ margin-bottom: 10px; }
+
+.content-main { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
+
+.content { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ display: flex; align-items: flex-start; /* Align items at the start of the cross axis */ flex-wrap: wrap; }
+
+.img-content { max-width: 50%; margin-right: 20px; }
+
+.img-content img { background-color: #222; /* Background color for the content container */ border: 2px solid #2ecc71; /* Border for the content container */ max-width: 100%; }
+
+.caption { text-align: center; margin-top: 10px; /* Adjust the margin as needed */ }
+
+.text-content { flex: 1; }
+
+.description-text { font-size: 80%; color: #DDD; /* Your desired color for the description text */ }
+
+.home-page-article-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+
+.home-page-article-card { background-color: #222; padding: 10px; border: 1px solid #2ed573; color: #DDD; text-align: left; width: 100%; box-sizing: border-box; margin-bottom: 10px; transition: background-color 0.3s, transform 0.3s; }
+
+.home-page-article-card:hover:hover { background-color: #2ed573; transform: scale(1.02); }
+
+.home-page-article-card h2 { font-size: 1.2em; /* Adjust the font size as needed */ color: #2ed573; }
+
+.home-page-article-card p { font-size: 1em; /* Adjust the font size as needed */ }
+
+.card-link { display: block; text-decoration: none; color: #222; /* Set your desired text color */ }
+
+.card-link:hover { background-color: #ddd; /* Set your desired hover background color */ }
