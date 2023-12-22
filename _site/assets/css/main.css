@@ -7,8 +7,7 @@ a:hover { color: var(--bg-color); background-color: var(--alt-color); }
 
 body { background-color: #333; /* Light grey background */ color: #f5f5f5; /* Darker text color for improved readability */ font-family: 'Source Code Pro', monospace; margin: 0 auto; width: 100%; line-height: 1.6em; font-size: 0.9em; /* Slightly larger font size for improved readability */ }
 
-/* Additional styles for the specific page content */
-.content-wrapper { max-width: 900px; margin: 20px auto; padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
+.content-wrapper { display: flex; flex-direction: column; /* Stack children vertically */ align-items: center; /* Center the content horizontally */ max-width: 900px; margin: 20px auto; padding: 20px; }
 
 /* Add this to your existing stylesheet */
 .category-buttons { display: flex; justify-content: center; align-items: center; max-width: 900px; margin: 0 auto; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
@@ -127,8 +126,6 @@ strong { color: #2ed573; /* Change this to the desired color */ }
 
 .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.adsbygoogle { margin-top: 12px; margin-bottom: 12px; background-color: #222; color: #DDD; padding: 20px; }
-
 section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust width based on your design */ margin-bottom: 10px; }
 
 .content-main { max-width: 100%; margin: 20px auto; background-color: #222; /* Background color for the content container */ border: 1px solid #2ecc71; /* Border for the content container */ padding: 20px; /* Padding inside the content container */ overflow: hidden; /* Clear float */ }
@@ -158,3 +155,5 @@ section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust w
 .card-link { display: block; text-decoration: none; color: #222; /* Set your desired text color */ }
 
 .card-link:hover { background-color: #ddd; /* Set your desired hover background color */ }
+
+.ads-container { max-width: 300px; /* Adjust the width as needed */ margin: 20px; /* Add margin for spacing */ border: 1px solid #2ed573; display: inline-block; /* Display the ad container as an inline block */ }

@@ -32,13 +32,16 @@ body {
   font-size: 0.9em; /* Slightly larger font size for improved readability */
 }
 
-/* Additional styles for the specific page content */
 .content-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center the content horizontally */
   max-width: 900px;
   margin: 20px auto;
-  padding: 20px; /* Padding inside the content container */
-  overflow: hidden; /* Clear float */
+  padding: 20px;
 }
+
+
 
 /* Add this to your existing stylesheet */
 .category-buttons {
@@ -384,14 +387,6 @@ strong {
   height: 100%;
 }
 
-.adsbygoogle {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  background-color: #222;
-  color: #DDD;
-  padding: 20px;
-}
-
 section {
   padding: 10px;
   color: #DDD;
@@ -487,6 +482,18 @@ section {
 .card-link:hover {
   background-color: #ddd; /* Set your desired hover background color */
 }
+
+.ads-container {
+  max-width: 300px; /* Adjust the width as needed */
+  margin: 20px; /* Add margin for spacing */
+  border: 1px solid #2ed573;
+  display: inline-block; /* Display the ad container as an inline block */
+}
+
+
+
+
+
 
 
 

@@ -6,7 +6,6 @@ title: Matthews-Project-Vault
 detail_image: assets/home_screen_deatil_header.svg
 ---
 
-<body class="home-page">
 
   <div>
     <h1> Welcome to My Website </h1>
@@ -54,4 +53,4 @@ detail_image: assets/home_screen_deatil_header.svg
     <a href="https://jekyllrb.com/docs/" target="_blank">Jekyll Docs</a>
   </section>
 
-</body>
+
