@@ -156,4 +156,4 @@ section { padding: 10px; color: #DDD; text-align: left; width: 100%; /* Adjust w
 
 .card-link:hover { background-color: #ddd; /* Set your desired hover background color */ }
 
-.ads-container { max-width: 300px; /* Adjust the width as needed */ margin: 20px; /* Add margin for spacing */ border: 1px solid #2ed573; display: inline-block; /* Display the ad container as an inline block */ }
+.ads-container { max-width: 300px; /* Adjust the width as needed */ margin: 20px; /* Add margin for spacing */ display: inline-block; /* Display the ad container as an inline block */ }
