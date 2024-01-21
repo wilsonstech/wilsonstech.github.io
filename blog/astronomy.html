@@ -1,0 +1,28 @@
+---
+layout: project-page
+title: astronomy
+category: astronomy
+permalink: /blog/astronomy/
+---
+
+<div class="category-buttons" style="margin-bottom: 20px;">
+  <div class="page_title">Categories</div>
+  <ul>
+    <li><a href="{{ site.baseurl }}/blog" style="font-size: 0.9em; color: #2ed573;">All</a></li> 
+  </ul>
+</div>
+
+<h1 class="page-title">{{ page.title }}</h1>
+
+<ul class="article-list">
+  {% for post in site.categories.astronomy %}
+    <li class="article-card">
+      <a href="{{ post.url | relative_url }}" class="card-link">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>{{ post.title | escape }}</h2>
+        <div class="post-content">
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

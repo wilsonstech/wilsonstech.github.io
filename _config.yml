@@ -6,7 +6,7 @@ baseurl: ""
 url: "https://WilsonsTech.github.io"
 
 plugins:
-  - paginate  # Make sure this is at the top of the list
+  - paginate  
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
